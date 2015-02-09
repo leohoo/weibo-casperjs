@@ -44,11 +44,8 @@ if (image) {
       this.waitForSelector(".uploadList img", function(){
         dom_ready = true;
       });
-      this.echo("dom_ready : " + dom_ready);
       return dom_ready;
-    }, null, function timeout(){
-      this.capture("timeout.png");
-    }, 30000);
+    }, null, null, 30000); 
   });
 }
 
